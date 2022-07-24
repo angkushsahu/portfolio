@@ -1,34 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Angkush Sahu
 
-## Getting Started
+Hey there, I am Angkush, a full-stack developer and programmer. I code websites which are performant and attractive.
 
-First, run the development server:
+I like to watch movies and shows when I am not coding.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+This is my portfolio which contains information about all the necessary skill sets and projects that I have been working on.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Visit [My Portfolio](https://angkush.vercel.app)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### [Download](https://drive.google.com/file/d/10sPB1KvlbEG0QWgZqcdCgODKqZj5J7WV/view?usp=sharing) my resume
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+#### Tech Stack -- Next.js (Typescript)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+#### Dark mode
 
-## Learn More
+![Angkush Sahu](https://res.cloudinary.com/dvhucdquc/image/upload/v1658647717/portfolio_wallpaper/dark_mode_nxdnsa.png)
 
-To learn more about Next.js, take a look at the following resources:
+#### Light mode
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Angkush Sahu](https://res.cloudinary.com/dvhucdquc/image/upload/v1658647724/portfolio_wallpaper/light_mode_j1tpgm.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+##
 
-## Deploy on Vercel
+Contact Me from [here](https://angkush.vercel.app/contact)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Link to [portfolio](https://angkush.vercel.app)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Link to [github](https://github.com/angkushsahu)
+
+Connect with me on [Linked-in](https://www.linkedin.com/in/angkush-sahu-0409311bb/)
