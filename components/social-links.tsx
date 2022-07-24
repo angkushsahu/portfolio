@@ -13,7 +13,7 @@ const SocialLinks: FC = () => {
 	return (
 		<section className="fixed left-6 bottom-0 hidden sm:flex flex-col items-center gap-6">
 			<IconContext.Provider
-				value={{ size: "1.6rem", color: theme === "dark" ? "#f3f4f6" : "#3f3f46" }}
+				value={{ size: "1.6rem", color: theme === "light" ? "#3f3f46" : "#d1d5db" }}
 			>
 				{theme === "dark" ? (
 					<MdLightMode className="cursor-pointer" onClick={() => setTheme("light")} />
@@ -34,7 +34,7 @@ const SocialLinks: FC = () => {
 					<BsLinkedin className="cursor-pointer" />
 				</a>
 			</IconContext.Provider>
-			<span className="h-20 bg-zinc-600 dark:bg-gray-100 w-[3px]"></span>
+			<span className="h-20 bg-zinc-600 dark:bg-gray-300 w-[3px]"></span>
 		</section>
 	);
 };

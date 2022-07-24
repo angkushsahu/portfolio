@@ -4,13 +4,13 @@ import dynamic from "next/dynamic";
 import Loading from "../components/loading";
 import Meta from "../components/meta";
 import Gradient from "../components/gradient";
+import SocialLinks from "../components/social-links";
 const Navbar = dynamic(() => import("../components/navbar"), { suspense: true });
 const Hero = dynamic(() => import("../components/hero"), { suspense: true });
 const Skills = dynamic(() => import("../components/skills"), { suspense: true });
 const Projects = dynamic(() => import("../components/projects"), { suspense: true });
 const MoreAboutMe = dynamic(() => import("../components/more-about"), { suspense: true });
 const Contact = dynamic(() => import("../components/contact"), { suspense: true });
-const SocialLinks = dynamic(() => import("../components/social-links"), { suspense: true });
 
 const Home: NextPage = () => {
 	return (
