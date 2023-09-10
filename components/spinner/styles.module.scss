@@ -1,0 +1,23 @@
+@use "@/styles/mixins" as mixin;
+
+.spinner {
+   @include mixin.flexBox;
+   & > div {
+      $dimension: 2rem;
+      width: $dimension;
+      height: $dimension;
+      border: 3px solid #ffffff;
+      border-bottom-color: transparent;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+   }
+}
+
+@keyframes spin {
+   from {
+      transform: rotateZ(0deg);
+   }
+   to {
+      transform: rotateZ(360deg);
+   }
+}

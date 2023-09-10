@@ -1,0 +1,103 @@
+@use "@/styles/variables" as var;
+@use "@/styles/mixins" as mixin;
+@use "@/styles/breakpoints" as *;
+
+.contact {
+   padding: 1rem 0 4rem;
+   & > h1 {
+      margin: 1rem 0 4rem;
+   }
+   & > div {
+      @include mixin.flexBox;
+      gap: 4rem;
+      & > form {
+         @include mixin.flexBox;
+         max-width: 60rem;
+         width: 100%;
+         flex-direction: column;
+         gap: 2.5rem;
+         button.send_button {
+            margin-top: 1.5rem;
+            width: 100%;
+            &:disabled {
+               cursor: not-allowed;
+            }
+         }
+         @include breakpoints(contact-page) {
+            max-width: none;
+         }
+      }
+      & > section {
+         flex: 1;
+         @include mixin.flexBox;
+         & > .circle_container {
+            $dimension: 20rem;
+            width: $dimension;
+            height: $dimension;
+            border-radius: 50%;
+            & > .circle {
+               background-image: var.$circle-gradient;
+               border: none;
+               outline: none;
+               width: 100%;
+               height: 100%;
+               border-radius: 50%;
+               @include mixin.flexBox;
+               position: relative;
+               isolation: isolate;
+               animation: bounce-ball 1000ms linear infinite alternate-reverse;
+               &::before {
+                  content: "";
+                  position: absolute;
+                  width: 80%;
+                  height: 80%;
+                  border-radius: 50%;
+                  background-image: var.$shape-gradient;
+                  transform: rotateZ(45deg);
+                  filter: blur(20px);
+                  transition: transform 300ms ease;
+               }
+               &::after {
+                  content: "";
+                  position: absolute;
+                  width: 70%;
+                  height: 3.2rem;
+                  background-image: var.$shape-gradient;
+                  border-radius: 50%;
+                  bottom: -45%;
+                  filter: blur(20px);
+                  animation: bounce-ball-shadow 1000ms linear infinite alternate-reverse;
+               }
+               &:hover::before {
+                  transform: rotateZ(90deg);
+               }
+            }
+         }
+         @include breakpoints(contact-page) {
+            display: none;
+         }
+      }
+   }
+   @include breakpoints(mobile-xl) {
+      & > h1 {
+         font-size: 3.2rem;
+      }
+   }
+}
+
+@keyframes bounce-ball {
+   from {
+      top: 5%;
+   }
+   to {
+      top: 0%;
+   }
+}
+@keyframes bounce-ball-shadow {
+   from {
+      bottom: -35%;
+   }
+   to {
+      bottom: -45%;
+   }
+}
