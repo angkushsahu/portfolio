@@ -17,11 +17,7 @@ export const metadata: Metadata = {
       "Hey there, I am Angkush, a dedicated penchant full-stack developer. This portfolio reflects my dedication to crafting seamless digital experiences. Let's start an amazing journey of creating exciting and user friendly applications today.",
    viewport: "width=device-width, initial-scale=1.0",
    themeColor: "#000000",
-   icons: [
-      { rel: "icon", url: "/favicon.ico", type: "image/x-icon" },
-      { rel: "shortcut icon", url: "/favicon.ico", type: "image/x-icon" },
-      { rel: "apple-touch-icon", url: "/apple-touch-icon.png" },
-   ],
+   icons: [{ rel: "apple-touch-icon", url: "/apple-touch-icon.png" }],
    robots: "index, follow",
    keywords: "angkush, sahu, portfolio, website, web, developer, full, stack",
    manifest: "site.webmanifest",
@@ -31,6 +27,8 @@ export default function RootLayout({ children }: PropsWithChildren) {
    return (
       <html lang="en">
          <meta name="google-site-verification" content="vPaQc-oOuZAlm6kTARCjuHjnap45EALorP_ELfBVk-Y" />
+         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
          <body>
             <main className="parent_root">
                <div className="shape_1"></div>
