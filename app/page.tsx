@@ -25,7 +25,7 @@ export default function Home() {
                      A dedicated full-stack developer with a talent for optimization and aptitude for problem-solving.
                   </h2>
                   <div className={styles.links}>
-                     <a
+                     <Link
                         href="https://www.linkedin.com/in/angkush-sahu-0409311bb"
                         rel="noopener noreferrer"
                         target="_blank"
@@ -33,8 +33,8 @@ export default function Home() {
                         title="Visit my Linked-in account"
                      >
                         <Image src={linkedInIcon} alt="Link to my Linked-in Profile" />
-                     </a>
-                     <a
+                     </Link>
+                     <Link
                         href="https://github.com/angkushsahu"
                         rel="noopener noreferrer"
                         target="_blank"
@@ -42,13 +42,13 @@ export default function Home() {
                         title="Visit my Github account"
                      >
                         <Image src={githubIcon} alt="Link to my Github Profile" />
-                     </a>
+                     </Link>
                   </div>
                   <div className={styles.button_section}>
                      <Link href={projectsUrl} title="Visit projects page">
                         <button type="button">Projects</button>
                      </Link>
-                     <a
+                     <Link
                         href="https://drive.google.com/file/d/10sPB1KvlbEG0QWgZqcdCgODKqZj5J7WV/view"
                         rel="noopener noreferrer"
                         target="_blank"
@@ -59,7 +59,7 @@ export default function Home() {
                         <button className="cta_button" type="button">
                            Resume
                         </button>
-                     </a>
+                     </Link>
                      <Link href={contactUrl} title="Contact me">
                         <button type="button">Contact</button>
                      </Link>
