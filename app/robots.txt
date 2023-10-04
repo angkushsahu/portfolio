@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://angkushsahu.vercel.app/sitemap.xml
