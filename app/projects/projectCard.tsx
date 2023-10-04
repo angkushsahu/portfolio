@@ -1,4 +1,5 @@
 import styles from "./styles.module.scss";
+import Link from "next/link";
 import Image from "next/image";
 import { VscGithub } from "react-icons/vsc";
 import imageNotFound from "@/assets/no_image.svg";
@@ -10,7 +11,7 @@ export interface ProjectDataProps {
 
 export default function ProjectCard({ project }: ProjectDataProps) {
    return (
-      <a
+      <Link
          href={project.goLive}
          rel="noopener noreferrer"
          target="_blank"
@@ -31,7 +32,7 @@ export default function ProjectCard({ project }: ProjectDataProps) {
             </div>
             <div className={styles.data_card}>
                <p>{project.title}</p>
-               <a
+               <Link
                   href={project.github}
                   rel="noopener noreferrer"
                   target="_blank"
@@ -40,9 +41,9 @@ export default function ProjectCard({ project }: ProjectDataProps) {
                   key={project.title}
                >
                   <VscGithub className={styles.github_icon} title="Visit github repository" />
-               </a>
+               </Link>
             </div>
          </article>
-      </a>
+      </Link>
    );
 }
