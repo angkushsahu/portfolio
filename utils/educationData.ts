@@ -13,4 +13,5 @@ const educationData = [
    },
 ];
 
+export type IEducationData = typeof educationData;
 export default educationData;

@@ -1,8 +1,9 @@
-interface IProjectData {
+export interface IProjectData {
    title: string;
    github: string;
    goLive: string;
    image: string;
+   blurredUrl?: string;
 }
 
 const projectData: IProjectData[] = [

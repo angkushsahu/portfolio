@@ -2,14 +2,10 @@ import styles from "./styles.module.scss";
 import Image from "next/image";
 import { VscGithub } from "react-icons/vsc";
 import imageNotFound from "@/assets/no_image.svg";
+import type { IProjectData } from "@/utils/projectData";
 
 export interface ProjectDataProps {
-   project: {
-      title: string;
-      github: string;
-      goLive: string;
-      image: string;
-   };
+   project: IProjectData;
 }
 
 export default function ProjectCard({ project }: ProjectDataProps) {
@@ -28,7 +24,8 @@ export default function ProjectCard({ project }: ProjectDataProps) {
                   src={project.image ? project.image : imageNotFound}
                   alt={`Go to ${project.title}`}
                   loading="lazy"
-                  placeholder="empty"
+                  placeholder="blur"
+                  blurDataURL={project.blurredUrl}
                   fill
                />
             </div>
