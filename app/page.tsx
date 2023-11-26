@@ -5,6 +5,7 @@ import { Metadata } from "next";
 import { BaseLayout } from "@/components";
 import githubIcon from "@/assets/github.svg";
 import linkedInIcon from "@/assets/linkedin.svg";
+import showwCaseIcon from "@/assets/showwcase.svg";
 import { contactUrl, projectsUrl } from "@/constants/routes";
 
 export const metadata: Metadata = {
@@ -42,6 +43,15 @@ export default function Home() {
                         title="Visit my Github account"
                      >
                         <Image src={githubIcon} alt="Link to my Github Profile" />
+                     </Link>
+                     <Link
+                        href="https://www.showwcase.com/angkushsahu"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        aria-label="Visit my Showwcase account"
+                        title="Visit my Showwcase account"
+                     >
+                        <Image src={showwCaseIcon} alt="Link to my Showwcase Profile" />
                      </Link>
                   </div>
                   <div className={styles.button_section}>
