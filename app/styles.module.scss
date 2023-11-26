@@ -57,9 +57,15 @@
          width: fit-content;
          height: fit-content;
          & > img {
-            width: 3em;
-            height: 3em;
+            $dimension: 3em;
+            width: $dimension;
+            height: $dimension;
             transition: box-shadow 250ms ease;
+            @include breakpoints(mobile-sm) {
+               $dimension: 2.7em;
+               width: $dimension;
+               height: $dimension;
+            }
          }
          & > img:hover {
             box-shadow: 0 0 45px var.$primary-dark;

@@ -15,6 +15,7 @@ export default function About() {
    return (
       <BaseLayout>
          <main className={styles.about}>
+            {/* about section ----- start */}
             <div className={styles.about_me_section}>
                <h1>About Me</h1>
                <div>
@@ -44,6 +45,8 @@ export default function About() {
                   </div>
                </div>
             </div>
+            {/* about section ----- end */}
+            {/* education section ----- start */}
             <div className={styles.education}>
                <h2>Education</h2>
                <ul className={styles.education_details}>
@@ -55,6 +58,7 @@ export default function About() {
                   ))}
                </ul>
             </div>
+            {/* education section ----- end */}
          </main>
       </BaseLayout>
    );

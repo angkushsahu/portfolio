@@ -17,6 +17,7 @@ export default function Home() {
       <BaseLayout>
          <main>
             <section className={styles.home}>
+               {/* section - 1 ----- start */}
                <div>
                   <h1 className={styles.doc_heading}>
                      <span className={styles.subheading}>Hey, this is</span>
@@ -25,6 +26,7 @@ export default function Home() {
                   <h2 className={styles.thirdheading}>
                      A dedicated full-stack developer with a talent for optimization and aptitude for problem-solving.
                   </h2>
+                  {/* social links section ----- start */}
                   <div className={styles.links}>
                      <Link
                         href="https://www.linkedin.com/in/angkush-sahu-0409311bb"
@@ -54,6 +56,8 @@ export default function Home() {
                         <Image src={showwCaseIcon} alt="Link to my Showwcase Profile" />
                      </Link>
                   </div>
+                  {/* social links section ----- end */}
+                  {/* buttons section ----- start */}
                   <div className={styles.button_section}>
                      <Link href={projectsUrl} title="Visit projects page">
                         <button type="button">Projects</button>
@@ -74,12 +78,18 @@ export default function Home() {
                         <button type="button">Contact</button>
                      </Link>
                   </div>
+                  {/* buttons section ----- end */}
                </div>
+               {/* section - 1 ----- end */}
+               {/* section - 2 ----- start */}
                <div>
+                  {/* animated ball ----- start */}
                   <div className={styles.circle_container}>
                      <div className={styles.circle}></div>
                   </div>
+                  {/* animated ball ----- end */}
                </div>
+               {/* section - 2 ----- end */}
             </section>
          </main>
       </BaseLayout>
