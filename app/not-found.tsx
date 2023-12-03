@@ -1,4 +1,4 @@
-import styles from "./notFound.module.scss";
+import styles from "./_home-styles/notFound.module.scss";
 import Link from "next/link";
 import { Metadata } from "next";
 import { homeUrl } from "@/constants/routes";

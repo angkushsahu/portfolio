@@ -1,4 +1,4 @@
-import styles from "./styles.module.scss";
+import styles from "./_home-styles/home.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
