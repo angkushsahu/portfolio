@@ -14,7 +14,7 @@ $breakpoints-scale: (
    "home-page": em(1050),
    "projects-page": em(1050),
    "contact-page": em(1000),
-   "about-page": em(1000),
+   "about-page": em(800),
 );
 
 @mixin breakpoints($size) {

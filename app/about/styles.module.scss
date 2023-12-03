@@ -9,10 +9,16 @@
          margin: 1rem 0 4rem;
       }
       & > div {
-         @include mixin.flexBox(space-between);
          & > .about_text_section > p {
-            max-width: 80ch;
             line-height: 180%;
+            margin-bottom: 2rem;
+            text-align: justify;
+            color: var.$faded;
+            & > .highlight,
+            &.contact_para {
+               color: #ffffff;
+               font-weight: 600;
+            }
             & > .link {
                color: var.$primary-light;
                &:hover {
@@ -21,6 +27,9 @@
                   text-underline-position: under;
                }
             }
+            @include breakpoints(about-page) {
+               text-align: left;
+            }
          }
          & > .avatar_container {
             $dimension: 30rem;
@@ -28,22 +37,16 @@
             height: $dimension;
             position: relative;
             isolation: isolate;
+            float: right;
+            margin: 0 0 1rem 8rem;
             & > img {
                position: absolute;
                inset: 0;
             }
             @include breakpoints(about-page) {
-               order: -1;
+               float: none;
                margin: 0 auto;
             }
-            @include breakpoints(mobile-xl) {
-               max-width: $dimension;
-               width: 100%;
-            }
-         }
-         @include breakpoints(about-page) {
-            flex-direction: column;
-            align-items: flex-start;
          }
       }
       @include breakpoints(mobile-xl) {
@@ -71,17 +74,22 @@
                content: counter(list-counter);
                position: absolute;
                left: -6%;
-               font-size: 2.5rem;
-               color: #6d6d6d;
+               font-size: 2.8rem;
+               color: var.$hard-faded;
                font-weight: 700;
             }
             & > p {
                margin: 0;
-               &:nth-child(1) {
-                  margin-bottom: 1rem;
+               &.education_course {
+                  font-size: 1.8rem;
                }
-               &:nth-child(2) {
+               &.education_institute {
+                  margin: 0.6rem 0 1rem;
                   color: var.$faded;
+               }
+               &.education_period {
+                  color: var.$hard-faded;
+                  font-weight: 600;
                }
             }
          }
