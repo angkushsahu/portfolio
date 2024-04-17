@@ -11,7 +11,7 @@ export function Header() {
       <ScrollTransition>
          <div className="center-layout flex items-center justify-between">
             <Link href={homeUrl}>
-               <Logo className="h-10 w-10" />
+               <Logo className="size-10" />
             </Link>
             <NavLinks />
             <MobileNav />

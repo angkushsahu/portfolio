@@ -1,12 +1,12 @@
 import { MoveRight } from "lucide-react";
 import Link from "next/link";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components";
 
 function CustomButton() {
    return (
-      <Button type="button" variant="default" className="h-20 w-20 rounded-full">
-         <MoveRight className="h-10 w-10" />
+      <Button type="button" variant="default" className="size-20 rounded-full">
+         <MoveRight className="size-10" />
       </Button>
    );
 }

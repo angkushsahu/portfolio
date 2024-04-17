@@ -23,7 +23,7 @@ export function ProjectCard({ href, image, projectType, projectTitle }: ProjectC
                width={572}
             />
          </article>
-         <div className="absolute left-0 top-0 z-10 flex h-full w-full -translate-x-4 flex-col items-center justify-center bg-black/60 text-center opacity-0 transition duration-500 ease-project-hover group-hover:translate-x-0 group-hover:opacity-100">
+         <div className="absolute left-0 top-0 z-10 flex size-full -translate-x-4 flex-col items-center justify-center bg-black/60 text-center opacity-0 transition duration-500 ease-project-hover group-hover:translate-x-0 group-hover:opacity-100">
             <span className="flex items-center gap-x-4 font-gordita text-xl">
                Know More <MoveRight />
             </span>

@@ -6,8 +6,7 @@ import { Grip } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
 
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
-import { Button, buttonVariants } from "../ui/button";
+import { Button, buttonVariants, Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components";
 import { socialLinks } from "@/constants";
 import { navlinks } from "./links";
 import { Logo } from "../logo";
@@ -21,12 +20,12 @@ function IconLink({ href, Icon }: { href: string; Icon: IconType }) {
          rel="noopener noreferrer"
          className={cn(
             buttonVariants({
-               className: "h-12 w-12 rounded-full bg-transparent p-3",
+               className: "size-12 rounded-full bg-transparent p-3",
                variant: "outline",
             })
          )}
       >
-         <Icon className="h-5 w-5 text-muted-foreground" />
+         <Icon className="size-5 text-muted-foreground" />
       </Link>
    );
 }
@@ -40,7 +39,7 @@ export default function MobileNav() {
          <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
                <Button type="button" variant="outline" size="icon" className="rounded-full">
-                  <Grip className="h-5 w-5" />
+                  <Grip className="size-5" />
                </Button>
             </SheetTrigger>
             <SheetContent>
@@ -53,7 +52,7 @@ export default function MobileNav() {
                   <nav className="flex flex-col gap-5">
                      {navlinks.map(({ Icon, href, title }) => (
                         <Link href={href} key={title} className="flex items-center gap-3 text-lg" onClick={() => setOpen(false)}>
-                           <Icon strokeWidth={1} className="h-6 w-6 text-muted-foreground" />
+                           <Icon strokeWidth={1} className="size-6 text-muted-foreground" />
                            {title}
                         </Link>
                      ))}
