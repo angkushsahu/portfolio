@@ -2,6 +2,8 @@ import { MoveRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
+import { dataUrl } from "@/lib";
+
 export interface ProjectCardProps {
    href: string;
    image: string;
@@ -17,7 +19,8 @@ export function ProjectCard({ href, image, projectType, projectTitle }: ProjectC
                src={image}
                alt={`Project`}
                loading="lazy"
-               placeholder="empty"
+               placeholder="blur"
+               blurDataURL={dataUrl({ height: 297, width: 572 })}
                className="shadow-project-img"
                height={297}
                width={572}

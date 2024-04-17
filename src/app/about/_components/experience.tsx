@@ -2,8 +2,9 @@ import Image from "next/image";
 
 import { Separator } from "@/components";
 import { experienceArr } from "./data";
+import { dataUrl } from "@/lib";
 
-export default function Experience() {
+export default async function Experience() {
    return (
       <section className="py-16 pt-0 sm:pt-16 md:pt-32">
          <h1>Experience</h1>
@@ -19,6 +20,7 @@ export default function Experience() {
                         alt={experience.companyName}
                         placeholder="blur"
                         loading="lazy"
+                        blurDataURL={dataUrl({ height: 100, width: 100 })}
                         width={100}
                         height={100}
                         className="grayscale"

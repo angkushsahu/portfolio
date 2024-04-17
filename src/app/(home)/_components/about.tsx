@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import quoteImg from "@/assets/about_quote.svg";
-import workingImg from "@/assets/working.png";
+import workingImg from "@/assets/working.webp";
 import { aboutUrl } from "@/constants";
 import { Button } from "@/components";
 

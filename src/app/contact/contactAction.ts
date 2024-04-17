@@ -4,8 +4,6 @@ import type { ContactType } from "./form.validation";
 
 export default async function contactAction(values: ContactType) {
    try {
-      console.log(values);
-
       if (!process.env.MAIL_URL) throw new Error("Please specify MAIL_URL environment variable");
 
       const response = await fetch(process.env.MAIL_URL, {

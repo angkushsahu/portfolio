@@ -27,8 +27,8 @@ export const languages = [
 
 export const experienceArr = [
    {
-      role: "Full Stack Developer",
-      companyLogo: saurabhiMediaLogo,
+      role: "Backend Developer",
+      companyLogo: "https://res.cloudinary.com/dvhucdquc/image/upload/v1713349801/companies/jx0dpdqj9y4jes8pfib1.webp",
       companyName: "Saurabhi Media",
       duration: "Feb 2024 - May 2024",
       location: "Remote",
@@ -36,7 +36,7 @@ export const experienceArr = [
    },
    {
       role: "Full Stack Developer",
-      companyLogo: feetwingsLogo,
+      companyLogo: "https://res.cloudinary.com/dvhucdquc/image/upload/v1713349801/companies/ng4fvluwoscgiuifdzzw.webp",
       companyName: "Feetwings",
       duration: "Apr 2022 - Jun 2022",
       location: "Remote",

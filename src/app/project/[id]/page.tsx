@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-import { getProjectById } from "@/lib";
+import { dataUrl, getProjectById } from "@/lib";
 import { Button } from "@/components";
 
 export function generateMetadata({ params }: { params: { id: string } }): Metadata {
@@ -39,7 +39,8 @@ export default function Project({ params }: { params: { id: string } }) {
                   src={project.coverImg}
                   alt={project.title}
                   loading="lazy"
-                  // placeholder="blur"
+                  placeholder="blur"
+                  blurDataURL={dataUrl({ height: 532, width: 1024 })}
                   height={532}
                   width={1024}
                />
