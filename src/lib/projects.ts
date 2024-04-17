@@ -14,25 +14,6 @@ export type ProjectType = {
 
 export const projects: Array<ProjectType> = [
    {
-      title: "Pacifio",
-      url: `${displayProjectUrl}/pacifio`,
-      liveLink: "https://pacifio.vercel.app",
-      githubLink: "https://github.com/angkushsahu/pacifio-client",
-      type: "Full Stack Project",
-      technologies: ["Typescript", "Next", "Tailwind", "Radix UI", "Nest", "Express", "MongoDB"],
-      coverImg: "https://res.cloudinary.com/dvhucdquc/image/upload/v1707900980/projects/abenm3dkfqxj5vnp1t2y.webp",
-      description:
-         "Pacifio is an online store catering to gamers and coders, offering a variety of accessories to enhance their gaming or coding setups. The platform boasts a user-friendly interface and fast performance for seamless shopping experience",
-      features: [
-         "Rigorous validation of incoming data from clients to servers and vice versa to ensure only desired variables are passed, enhancing security",
-         "Implemented robust error handling strategies in both client-side and backend to provide graceful error messages and enhance user experience",
-         "Leveraged TypeScript for type safety in both client and server-side code, reducing runtime errors and enhancing code maintainability",
-         "Incorporated loading states for all pages to provide feedback to users during data fetching processes, improving UX",
-         "Ensured fast API responses and overall performance through optimized code and efficient database querying practices",
-         "Designed an intuitive and user-friendly UI to facilitate easy navigation and enhance user engagement",
-      ],
-   },
-   {
       title: "Products API",
       url: `${displayProjectUrl}/products-api`,
       liveLink: "https://products.cyclic.app",
@@ -66,6 +47,25 @@ export const projects: Array<ProjectType> = [
          "Enhanced safety and error reduction through comprehensive TypeScript implementation across the entire project stack",
          "Utilizes types and validations at each layer, ensuring adherence to DRY principles and robust consistency",
          "Seamless user experience facilitated by timely loading state feedback, enhancing interaction responsiveness and engagement",
+      ],
+   },
+   {
+      title: "Pacifio",
+      url: `${displayProjectUrl}/pacifio`,
+      liveLink: "https://pacifio.vercel.app",
+      githubLink: "https://github.com/angkushsahu/pacifio-client",
+      type: "Full Stack Project",
+      technologies: ["Typescript", "Next", "Tailwind", "Radix UI", "Nest", "Express", "MongoDB"],
+      coverImg: "https://res.cloudinary.com/dvhucdquc/image/upload/v1707900980/projects/abenm3dkfqxj5vnp1t2y.webp",
+      description:
+         "Pacifio is an online store catering to gamers and coders, offering a variety of accessories to enhance their gaming or coding setups. The platform boasts a user-friendly interface and fast performance for seamless shopping experience",
+      features: [
+         "Rigorous validation of incoming data from clients to servers and vice versa to ensure only desired variables are passed, enhancing security",
+         "Implemented robust error handling strategies in both client-side and backend to provide graceful error messages and enhance user experience",
+         "Leveraged TypeScript for type safety in both client and server-side code, reducing runtime errors and enhancing code maintainability",
+         "Incorporated loading states for all pages to provide feedback to users during data fetching processes, improving UX",
+         "Ensured fast API responses and overall performance through optimized code and efficient database querying practices",
+         "Designed an intuitive and user-friendly UI to facilitate easy navigation and enhance user engagement",
       ],
    },
    {
