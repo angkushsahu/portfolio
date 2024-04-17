@@ -48,38 +48,3 @@ export default function HeroSection() {
       </section>
    );
 }
-// export default function HeroSection() {
-// 	return (
-// 		<section className="bg-orange-500 center-layout py-32 pt-10 sm:pt-16 md:pt-32 flex flex-col md:flex-row items-center justify-between">
-// 			<div>
-// 				<h1 className="font-recoleta text-center md:text-left">Angkush Sahu</h1>
-// 				<h2 className="text-muted-foreground tracking-widest mt-4 sm:mt-6 text-center md:text-left leading-tight text-xl sm:text-2xl xl:text-4xl">
-// 					FULL STACK DEVELOPER
-// 				</h2>
-// 				<div className="mt-8 sm:mt-12 flex items-center justify-center md:justify-start gap-x-6">
-// 					{socialLinks.map(({ Icon, href, title }, idx) => (
-// 						<CustomTooltip key={`Hero Icon ${idx + 1}`} tooltip={title} className="rounded-full">
-// 							<Link
-// 								key={href}
-// 								href={href}
-// 								target="_blank"
-// 								rel="noopener noreferrer"
-// 								className={cn(
-// 									buttonVariants({
-// 										className: "bg-transparent rounded-full size-12 p-3",
-// 										variant: "outline",
-// 									}),
-// 								)}
-// 							>
-// 								<Icon className="text-white size-5" />
-// 							</Link>
-// 						</CustomTooltip>
-// 					))}
-// 				</div>
-// 			</div>
-// 			<div className="-order-1 md:order-none flex items-center justify-center h-52 md:h-auto">
-// 				<HeroLogo className="scale-[0.6] md:scale-75 lg:scale-100" />
-// 			</div>
-// 		</section>
-// 	);
-// }
