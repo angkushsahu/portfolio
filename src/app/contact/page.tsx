@@ -1,8 +1,13 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 
 import contactBg from "@/assets/contact_bg.webp";
 import { Toaster } from "@/components";
 import ContactForm from "./form";
+
+export const metadata: Metadata = {
+   title: "Contact",
+};
 
 export default function ContactPage() {
    return (

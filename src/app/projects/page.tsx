@@ -1,7 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { Button, ProjectCard } from "@/components";
 import { projects } from "@/lib";
+
+export const metadata: Metadata = {
+   title: "Projects",
+};
 
 export default function ProjectsPage() {
    return (

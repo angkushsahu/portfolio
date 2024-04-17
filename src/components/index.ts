@@ -9,6 +9,8 @@ export * from "./ui/label";
 export * from "./ui/sheet";
 export * from "./ui/form";
 
+export * from "./meta/metadata";
+export * from "./meta/viewport";
 export * from "./projectCard";
 export * from "./linkButton";
 export * from "./heroLogo";
