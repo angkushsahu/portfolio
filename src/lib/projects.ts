@@ -51,6 +51,24 @@ export const projects: Array<ProjectType> = [
       ],
    },
    {
+      title: "ProfileFolio",
+      url: `${displayProjectUrl}/profilefolio`,
+      liveLink: "https://profile-folio.vercel.app",
+      githubLink: "https://github.com/angkushsahu/profilefolio",
+      type: "Full Stack Project",
+      technologies: ["Typescript", "Next", "Tailwind", "Radix UI", "TRPC", "Drizzle ORM", "PostgreSQL"],
+      coverImg: "https://res.cloudinary.com/dvhucdquc/image/upload/v1713337988/projects/uj3lmtnp7gpivesgvs04.png",
+      description:
+         "ProfileFolio is a user-friendly web application designed for software engineers to effortlessly create personalized portfolios without needing any prior web development experience.",
+      features: [
+         "Simplified portfolio creation accessible to all, regardless of web development experience, fostering inclusivity and usability",
+         "Stringent authentication checks at every stage uphold user safety and data security standards effectively",
+         "Enhanced safety and error reduction through comprehensive TypeScript implementation across the entire project stack",
+         "Utilizes types and validations at each layer, ensuring adherence to DRY principles and robust consistency",
+         "Seamless user experience facilitated by timely loading state feedback, enhancing interaction responsiveness and engagement",
+      ],
+   },
+   {
       title: "Coinland",
       url: `${displayProjectUrl}/coinland`,
       liveLink: "https://coin-land.netlify.app",
