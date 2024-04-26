@@ -18,7 +18,7 @@ export function Cursor({ children }: PropsWithChildren) {
          {children}
          <div
             ref={cursorRef}
-            className="pointer-events-none fixed left-0 top-0 z-[1] flex size-16 -translate-x-1/2 -translate-y-1/2 scale-50 items-center justify-center rounded-full bg-neutral-200 mix-blend-exclusion transition-transform"
+            className="pointer-events-none fixed -left-10 -top-10 z-[1] flex size-16 -translate-x-1/2 -translate-y-1/2 scale-50 items-center justify-center rounded-full bg-neutral-200 mix-blend-exclusion transition-transform"
          >
             <div className="flex size-[3.75rem] items-center justify-center rounded-full bg-black">
                <div className="flex size-12 items-center justify-center rounded-full bg-neutral-200"></div>
