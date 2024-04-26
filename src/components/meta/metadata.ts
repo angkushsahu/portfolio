@@ -26,7 +26,7 @@ export const webMeta: Metadata = {
    referrer: "origin-when-cross-origin",
    metadataBase: new URL("https://angkushsahu.vercel.app"),
    authors: [{ name: "Angkush Sahu", url: "https://angkushsahu.vercel.app" }],
-   verification: { google: process.env.SOMETHING },
+   verification: { google: process.env.GOOGLE_VERIFICATION },
    openGraph: {
       title: page.title,
       description: page.description,
