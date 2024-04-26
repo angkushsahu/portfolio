@@ -14,7 +14,7 @@ export default function ScrollTransition({ children }: PropsWithChildren) {
 
       document.addEventListener("scroll", scrollShadow);
       return () => document.removeEventListener("scroll", scrollShadow);
-   }, [globalThis?.scrollY]);
+   }, []);
 
    return (
       <header ref={headerRef} className="sticky top-0 z-50 py-5">
