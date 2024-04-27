@@ -7,7 +7,7 @@ export default function sitemap(): SitemapType {
    const baseUrl = "https://angkushsahu.vercel.app";
 
    const projectSitemap: SitemapType = projects.map((project) => ({
-      url: `${baseUrl}/projects/${project.title}`,
+      url: `${baseUrl}${project.url}`,
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 0.8,
