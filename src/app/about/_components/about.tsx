@@ -19,7 +19,7 @@ export default function AboutSection() {
             </p>
             <p>
                Feel free to{" "}
-               <Link className="font-gordita text-white underline underline-offset-4" href={contactUrl}>
+               <Link className="font-gordita text-white underline underline-offset-4" href={contactUrl} aria-label="Contact me">
                   reach out
                </Link>
                .

@@ -3,20 +3,27 @@ import Link from "next/link";
 
 import { Button } from "@/components";
 
-function CustomButton() {
+interface LinkButtonProps {
+   href?: string;
+   ariaLabel: string;
+}
+
+type CustomButtonProps = Pick<LinkButtonProps, "ariaLabel">;
+
+function CustomButton({ ariaLabel }: CustomButtonProps) {
    return (
-      <Button variant="default" className="size-20 rounded-full">
+      <Button variant="default" className="size-20 rounded-full" aria-label={ariaLabel}>
          <MoveRight className="size-10" />
       </Button>
    );
 }
 
-export function LinkButton({ href }: { href?: string }) {
+export function LinkButton({ href, ariaLabel }: LinkButtonProps) {
    return href ? (
-      <Link href={href}>
-         <CustomButton />
+      <Link href={href} aria-label={ariaLabel}>
+         <CustomButton ariaLabel={ariaLabel} />
       </Link>
    ) : (
-      <CustomButton />
+      <CustomButton ariaLabel={ariaLabel} />
    );
 }

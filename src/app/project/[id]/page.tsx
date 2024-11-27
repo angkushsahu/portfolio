@@ -22,13 +22,18 @@ export default function Project({ params }: { params: { id: string } }) {
          <h1 className="mb-6">{project.title}</h1>
          <p className="font-gordita-light text-xl leading-relaxed tracking-wider md:text-2xl">{project.description}</p>
          <div className="mt-10">
-            <Link href={project.liveLink} target="_blank" rel="noopener noreferrer">
-               <Button variant="secondary">
+            <Link href={project.liveLink} target="_blank" rel="noopener noreferrer" aria-label={`Visit ${project.title}`}>
+               <Button variant="secondary" aria-label={`Visit ${project.title}`}>
                   Visit <FiExternalLink className="ml-4 size-4" />
                </Button>
             </Link>
-            <Link href={project.githubLink} target="_blank" rel="noopener noreferrer">
-               <Button variant="outline">
+            <Link
+               href={project.githubLink}
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label={`Github repository for ${project.title}`}
+            >
+               <Button variant="outline" aria-label={`Github repository for ${project.title}`}>
                   Github <VscGithubAlt className="ml-4 size-4" />
                </Button>
             </Link>

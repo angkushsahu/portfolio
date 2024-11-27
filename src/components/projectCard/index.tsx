@@ -13,7 +13,11 @@ export interface ProjectCardProps {
 
 export function ProjectCard({ href, image, projectType, projectTitle }: ProjectCardProps) {
    return (
-      <Link href={href} className="group relative overflow-hidden transition-transform ease-project-hover hover:scale-[0.99]">
+      <Link
+         href={href}
+         aria-label={`Know more about ${projectTitle} project`}
+         className="group relative overflow-hidden transition-transform ease-project-hover hover:scale-[0.99]"
+      >
          <article className="flex items-center justify-center bg-gradient-to-br from-neutral-600 to-neutral-800 p-4 pb-24">
             <Image
                src={image}

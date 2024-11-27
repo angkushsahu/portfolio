@@ -100,7 +100,12 @@ export default function ContactForm() {
                   </FormItem>
                )}
             />
-            <Button type="submit" className="ml-auto flex w-32 overflow-hidden font-semibold" disabled={loading}>
+            <Button
+               type="submit"
+               className="ml-auto flex w-32 overflow-hidden font-semibold"
+               aria-label="Send mail"
+               disabled={loading}
+            >
                {loading ? <LoaderCircle className="size-6 animate-spin" /> : "Send Message"}
             </Button>
          </form>

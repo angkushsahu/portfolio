@@ -28,6 +28,7 @@ export default function HeroSection() {
                            href={href}
                            target="_blank"
                            rel="noopener noreferrer"
+                           aria-label={title}
                            className={cn(
                               buttonVariants({
                                  className: "size-12 rounded-full bg-transparent p-3",

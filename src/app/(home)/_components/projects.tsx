@@ -19,7 +19,7 @@ export default function ProjectsSection() {
          ))}
          <div className="place-self-center text-center">
             <h2 className="mb-10 text-3xl leading-tight text-muted-foreground sm:mb-16 xl:text-5xl">See More Projects</h2>
-            <LinkButton href={projectsUrl} />
+            <LinkButton href={projectsUrl} ariaLabel="See more projects" />
          </div>
       </section>
    );

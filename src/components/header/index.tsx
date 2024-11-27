@@ -10,7 +10,7 @@ export function Header() {
    return (
       <ScrollTransition>
          <div className="center-layout flex items-center justify-between">
-            <Link href={homeUrl}>
+            <Link href={homeUrl} aria-label="Go to home page">
                <Logo className="size-10" />
             </Link>
             <NavLinks />

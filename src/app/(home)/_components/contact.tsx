@@ -20,7 +20,7 @@ export default function ContactSection() {
          <div className="center-layout flex flex-col items-center justify-center">
             <h2 className="text-center text-2xl text-muted-foreground xl:text-4xl">Project,&nbsp; Job or any other enquiry</h2>
             <h1 className="mb-10 mt-8 text-center sm:mb-16">Contact Me</h1>
-            <LinkButton href={contactUrl} />
+            <LinkButton href={contactUrl} ariaLabel="Contact Me" />
          </div>
       </section>
    );
