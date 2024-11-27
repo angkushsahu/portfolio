@@ -23,12 +23,12 @@ export default function Project({ params }: { params: { id: string } }) {
          <p className="font-gordita-light text-xl leading-relaxed tracking-wider md:text-2xl">{project.description}</p>
          <div className="mt-10">
             <Link href={project.liveLink} target="_blank" rel="noopener noreferrer">
-               <Button type="button" variant="secondary">
+               <Button variant="secondary">
                   Visit <FiExternalLink className="ml-4 size-4" />
                </Button>
             </Link>
             <Link href={project.githubLink} target="_blank" rel="noopener noreferrer">
-               <Button type="button" variant="outline">
+               <Button variant="outline">
                   Github <VscGithubAlt className="ml-4 size-4" />
                </Button>
             </Link>

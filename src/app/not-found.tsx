@@ -9,7 +9,7 @@ export default function NotFoundPage() {
       <main className="center-layout flex min-h-page flex-col items-center justify-center">
          <h1 className="mb-8 text-center font-recoleta">Page does not exist</h1>
          <Link href={homeUrl} replace>
-            <Button type="button" className="font-semibold">
+            <Button className="font-semibold">
                <Home className="mr-2 size-5" /> Back to Home
             </Button>
          </Link>

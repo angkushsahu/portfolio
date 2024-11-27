@@ -15,7 +15,7 @@ export default function Error({ error, reset }: ErrorProps) {
          <h2 className="mb-8 mt-6 text-center text-2xl leading-tight tracking-widest text-muted-foreground xl:text-4xl">
             {error.name} - {error.message}
          </h2>
-         <Button type="button" onClick={reset} className="w-40 font-semibold">
+         <Button onClick={reset} className="w-40 font-semibold">
             <RotateCcwIcon className="mr-2 size-4" /> Try again
          </Button>
       </main>

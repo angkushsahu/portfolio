@@ -29,7 +29,7 @@ export default function AboutSection() {
             </div>
             <div className="pl-10 sm:pl-16 lg:pl-24">
                <Link href={aboutUrl}>
-                  <Button type="button" className="font-semibold">
+                  <Button className="font-semibold">
                      Know more <MoveRight strokeWidth={2} className="ml-4 size-4" />
                   </Button>
                </Link>

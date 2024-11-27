@@ -24,9 +24,7 @@ export default function ProjectsPage() {
             ))}
          </section>
          <Link href="https://github.com/angkushsahu" target="_blank" rel="noopener noreferrer">
-            <Button type="button" className="ml-auto block font-semibold">
-               Visit my Github Account
-            </Button>
+            <Button className="ml-auto block font-semibold">Visit my Github Account</Button>
          </Link>
       </main>
    );

@@ -38,7 +38,7 @@ export default function MobileNav() {
          <IconLink Icon={FiExternalLink} href="https://drive.google.com/file/d/10sPB1KvlbEG0QWgZqcdCgODKqZj5J7WV/view" />
          <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
-               <Button type="button" variant="outline" size="icon" className="rounded-full">
+               <Button variant="outline" size="icon" className="rounded-full">
                   <Grip className="size-5" />
                </Button>
             </SheetTrigger>

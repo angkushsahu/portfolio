@@ -5,7 +5,7 @@ import { Button } from "@/components";
 
 function CustomButton() {
    return (
-      <Button type="button" variant="default" className="size-20 rounded-full">
+      <Button variant="default" className="size-20 rounded-full">
          <MoveRight className="size-10" />
       </Button>
    );
