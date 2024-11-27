@@ -2,9 +2,7 @@ import { SiNestjs, SiRadixui, SiTailwindcss, SiTrpc, SiTypescript } from "react-
 import { FaJava, FaNodeJs, FaReact, FaRust, FaSass } from "react-icons/fa6";
 import { SiExpress, SiJavascript, SiMongodb, SiMui } from "react-icons/si";
 import { TbBrandCpp, TbBrandNextjs } from "react-icons/tb";
-
-import saurabhiMediaLogo from "@/assets/saurabhi_media.webp";
-import feetwingsLogo from "@/assets/feetwings.webp";
+import { BiLogoPostgresql } from "react-icons/bi";
 
 export const languages = [
    { Icon: TbBrandCpp, tooltip: "C++" },
@@ -22,6 +20,7 @@ export const languages = [
    { Icon: SiExpress, tooltip: "Express.js" },
    { Icon: SiNestjs, tooltip: "Nest.js" },
    { Icon: SiTrpc, tooltip: "TRPC" },
+   { Icon: BiLogoPostgresql, tooltip: "PostgreSQL" },
    { Icon: SiMongodb, tooltip: "Mongo DB" },
 ];
 
