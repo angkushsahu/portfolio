@@ -6,7 +6,7 @@ export default function Education() {
          <h1>Education</h1>
          <div className="mt-8 grid gap-8 sm:mt-12 md:grid-cols-2 lg:grid-cols-3">
             {educationArr.map(({ course, duration, institute }, idx) => (
-               <article key={course} className="border-[1px] border-box-border bg-box-color p-6 hover:border-gray-600">
+               <article key={course} className="border border-box-border bg-box-color p-6 hover:border-gray-600">
                   <div>
                      <span className="font-recoleta text-4xl font-semibold tracking-widest text-muted-foreground/25">
                         0{idx + 1}

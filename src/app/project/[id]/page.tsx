@@ -48,7 +48,7 @@ export default function Project({ params }: { params: { id: string } }) {
                   {project.technologies.map((tech) => (
                      <span
                         key={`${project?.title} - ${tech}`}
-                        className="rounded-full border-[1px] border-box-border bg-box-color px-4 py-1"
+                        className="rounded-full border border-box-border bg-box-color px-4 py-1"
                      >
                         {tech}
                      </span>

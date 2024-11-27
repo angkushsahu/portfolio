@@ -12,7 +12,7 @@ export default async function Experience() {
             {experienceArr.map((experience) => (
                <article
                   key={experience.companyName}
-                  className="flex flex-col flex-wrap justify-between gap-x-12 gap-y-6 border-[1px] border-box-border bg-box-color p-6 hover:border-gray-600 xs:flex-row"
+                  className="flex flex-col flex-wrap justify-between gap-x-12 gap-y-6 border border-box-border bg-box-color p-6 hover:border-gray-600 xs:flex-row"
                >
                   <div>
                      <Image
