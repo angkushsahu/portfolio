@@ -1,12 +1,13 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
+import { LoaderCircle } from "lucide-react";
 import { useForm } from "react-hook-form";
+import { useState } from "react";
 
 import { Button, Form, FormControl, FormField, FormItem, FormLabel, FormMessage, Input, Textarea, toast } from "@/components";
 import { type ContactType, contactSchema } from "./form.validation";
 import contactAction from "./contactAction";
-import { useState } from "react";
 
 export default function ContactForm() {
    const [loading, setLoading] = useState(false);
@@ -99,8 +100,8 @@ export default function ContactForm() {
                   </FormItem>
                )}
             />
-            <Button type="submit" className="ml-auto block font-semibold" disabled={loading}>
-               Send Message
+            <Button type="submit" className="ml-auto flex w-32 overflow-hidden font-semibold" disabled={loading}>
+               {loading ? <LoaderCircle className="size-6 animate-spin" /> : "Send Message"}
             </Button>
          </form>
       </Form>
