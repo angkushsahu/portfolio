@@ -10,7 +10,7 @@ import { Button } from "@/components";
 
 export function generateMetadata({ params }: { params: { id: string } }): Metadata {
    let project = getProjectById(params.id);
-   return { title: `${project?.title} | Project` ?? "Project" };
+   return { title: project?.title ? `${project.title} | Project` : "Project" };
 }
 
 export default function Project({ params }: { params: { id: string } }) {
