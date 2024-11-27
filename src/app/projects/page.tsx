@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
-import { Button, ProjectCard } from "@/components";
+import LinkToGithubCard from "./link-to-github-card";
+import { ProjectCard } from "@/components";
 import { projects } from "@/lib";
 
 export const metadata: Metadata = {
@@ -22,10 +22,8 @@ export default function ProjectsPage() {
                   projectType={project.type}
                />
             ))}
+            <LinkToGithubCard />
          </section>
-         <Link href="https://github.com/angkushsahu" target="_blank" rel="noopener noreferrer">
-            <Button className="ml-auto block font-semibold">Visit my Github Account</Button>
-         </Link>
       </main>
    );
 }
