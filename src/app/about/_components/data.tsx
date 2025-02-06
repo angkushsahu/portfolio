@@ -1,4 +1,4 @@
-import { SiNestjs, SiRadixui, SiTailwindcss, SiTrpc, SiTypescript } from "react-icons/si";
+import { SiNestjs, SiRadixui, SiShadcnui, SiTailwindcss, SiTrpc, SiTypescript } from "react-icons/si";
 import { FaJava, FaNodeJs, FaReact, FaRust, FaSass } from "react-icons/fa6";
 import { SiExpress, SiJavascript, SiMongodb, SiMui } from "react-icons/si";
 import { TbBrandCpp, TbBrandNextjs } from "react-icons/tb";
@@ -13,6 +13,7 @@ export const languages = [
    { Icon: FaReact, tooltip: "React.js" },
    { Icon: TbBrandNextjs, tooltip: "Next.js" },
    { Icon: SiRadixui, tooltip: "Radix UI" },
+   { Icon: SiShadcnui, tooltip: "Shadcn UI" },
    { Icon: SiMui, tooltip: "Material UI" },
    { Icon: SiTailwindcss, tooltip: "Tailwind CSS" },
    { Icon: FaSass, tooltip: "SASS" },
@@ -25,6 +26,14 @@ export const languages = [
 ];
 
 export const experienceArr = [
+   {
+      role: "Full Stack Developer",
+      companyLogo: "https://res.cloudinary.com/dvhucdquc/image/upload/v1738841938/companies/nkwr1wp2iww2y2yusdvn.jpg",
+      companyName: "Pathnovo Solutions",
+      duration: "Nov 2024 - Jan 2025",
+      location: "Remote",
+      jobType: "Internship",
+   },
    {
       role: "Backend Developer",
       companyLogo: "https://res.cloudinary.com/dvhucdquc/image/upload/v1713349801/companies/jx0dpdqj9y4jes8pfib1.webp",
